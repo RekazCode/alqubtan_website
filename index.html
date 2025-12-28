@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شركة القبطان الليبي | لاستيراد الأنابيب والمعدات النفطية</title>
+    <!-- Tailwind CSS for modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;700&display=swap');
+        
+        body {
+            font-family: 'Tajawal', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center gap-2">
+                        <i class="fas fa-anchor text-blue-800 text-3xl"></i>
+                        <span class="text-2xl font-bold text-blue-900 tracking-tight">القبطان الليبي</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-reverse space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-blue-800 font-medium">الرئيسية</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-800 font-medium">من نحن</a>
+                    <a href="#products" class="text-gray-700 hover:text-blue-800 font-medium">منتجاتنا</a>
+                    <a href="#contact" class="bg-blue-800 text-white px-6 py-2 rounded-full hover:bg-blue-900 transition">اتصل بنا</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t p-4">
+            <a href="#home" class="block py-2 text-gray-700">الرئيسية</a>
+            <a href="#about" class="block py-2 text-gray-700">من نحن</a>
+            <a href="#products" class="block py-2 text-gray-700">منتجاتنا</a>
+            <a href="#contact" class="block py-2 text-blue-800 font-bold">اتصل بنا</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section flex items-center justify-center text-center text-white">
+        <div class="max-w-4xl px-4">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">شركة القبطان الليبي</h1>
+            <p class="text-xl md:text-2xl mb-8 opacity-90">شريككم الموثوق لاستيراد وتوريد أجود أنواع الأنابيب والمعدات النفطية في ليبيا.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#products" class="bg-blue-700 text-white px-8 py-3 rounded-lg text-lg font-bold hover:bg-blue-800 transition">استعرض المنتجات</a>
+                <a href="#about" class="bg-transparent border-2 border-white px-8 py-3 rounded-lg text-lg font-bold hover:bg-white hover:text-blue-900 transition">تعرف علينا</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-blue-900 mb-6 border-r-4 border-blue-800 pr-4">من نحن</h2>
+                    <p class="text-gray-600 leading-relaxed text-lg mb-6">
+                        تعد شركة القبطان الليبي من الشركات الرائدة في السوق الليبي المتخصصة في استيراد وتوريد المعدات النفطية. نحن نلتزم بتوفير حلول متكاملة لقطاع الطاقة عبر شراكات عالمية مع كبرى المصانع.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check-circle text-green-500"></i>
+                            <span>أنابيب مطابقة للمواصفات العالمية (API).</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check-circle text-green-500"></i>
+                            <span>دقة عالية في التوريد والالتزام بالمواعيد.</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check-circle text-green-500"></i>
+                            <span>فريق هندسي متخصص للاستشارات الفنية.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-2xl">
+                    <img src="1.jpg" alt="Oil Equipment and Services" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-blue-900 mb-4 text-center">خدماتنا ومنتجاتنا</h2>
+            <p class="text-gray-600 mb-12">نحن نوفر أفضل المعدات التي تضمن كفاءة التشغيل في الحقول النفطية.</p>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg card-hover border-b-4 border-blue-800">
+                    <div class="text-blue-800 text-5xl mb-6">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">الأنابيب النفطية</h3>
+                    <p class="text-gray-600">توريد الأنابيب الفولاذية بمختلف الأقطار والضغوط لتحمل أقسى الظروف البيئية.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg card-hover border-b-4 border-blue-800">
+                    <div class="text-blue-800 text-5xl mb-6">
+                        <i class="fas fa-faucet"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">الصمامات والوصلات</h3>
+                    <p class="text-gray-600">مجموعة واسعة من الصمامات عالية الدقة (Gate, Globe, Check) المناسبة لخطوط النقل.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg card-hover border-b-4 border-blue-800">
+                    <div class="text-blue-800 text-5xl mb-6">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">معدات الحفر</h3>
+                    <p class="text-gray-600">توفير رؤوس الحفر والمعدات الميكانيكية الثقيلة اللازمة لعمليات الاستكشاف والإنتاج.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-blue-900 mb-4">معرض الصور</h2>
+            <p class="text-gray-600 mb-12">صور من أعمالنا ومنتجاتنا عالية الجودة</p>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="rounded-2xl overflow-hidden shadow-lg card-hover">
+                    <img src="1.jpg" alt="Oil and Gas Equipment" class="w-full h-80 object-cover">
+                    <div class="p-6 bg-gray-50">
+                        <h3 class="text-xl font-bold text-blue-900 mb-2">معداتنا النفطية</h3>
+                        <p class="text-gray-600">أحدث المعدات والأنابيب عالية الجودة</p>
+                    </div>
+                </div>
+                
+                <div class="rounded-2xl overflow-hidden shadow-lg card-hover">
+                    <img src="2.jpg" alt="Industrial Equipment" class="w-full h-80 object-cover">
+                    <div class="p-6 bg-gray-50">
+                        <h3 class="text-xl font-bold text-blue-900 mb-2">الحلول الصناعية</h3>
+                        <p class="text-gray-600">حلول متكاملة لقطاع النفط والغاز</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white text-right">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-3xl font-bold text-blue-900 mb-8">تواصل معنا</h2>
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <i class="fas fa-map-marker-alt text-blue-800 text-2xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold">الموقع</h4>
+                                <p class="text-gray-600">ليبيا - طرابلس،  </p>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-950 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-right">
+            <div class="grid md:grid-cols-3 gap-8 mb-8 border-b border-blue-900 pb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">القبطان الليبي</h3>
+                    <p class="text-blue-200 text-sm">شريككم الاستراتيجي في قطاع النفط والغاز. نتميز بالجودة والاحترافية.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">روابط سريعة</h3>
+                    <ul class="text-blue-200 space-y-2">
+                        <li><a href="#home" class="hover:text-white">الرئيسية</a></li>
+                        <li><a href="#about" class="hover:text-white">من نحن</a></li>
+                        <li><a href="#products" class="hover:text-white">منتجاتنا</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">تابعنا</h3>
+                    <div class="flex justify-center md:justify-start space-x-reverse space-x-4">
+                        <a href="#" class="text-2xl hover:text-blue-400"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-2xl hover:text-blue-400"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-2xl hover:text-blue-400"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center text-blue-300 text-sm">© 2025 شركة القبطان الليبي. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple mobile menu toggle
+        const btn = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close menu on click
+        const navLinks = document.querySelectorAll('#mobile-menu a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
+
+</body>
+</html>
